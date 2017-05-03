@@ -1,1 +1,1 @@
-Open up index.html in a browser and get started.
+Open up index.html in a browser to get started.
