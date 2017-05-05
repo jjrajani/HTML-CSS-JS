@@ -6,7 +6,7 @@
   <!-- charset Specifies Character set for your website to use -->
   <meta charset="utf-8">
   <!-- title gets displayed on the browser tab -->
-  <title>HTML / CSS / JS</title>
+  <title>HTML / CSS / JS - humdrum</title>
   <!--  Following Line is importing a Font from Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
   <!-- Links style sheet to application -->
@@ -16,7 +16,36 @@
 <!-- Body Tag: Where your app will live -->
 <body>
   <div>
-    Welcome to your life, should you so choose.
+    <header>
+      <h2>Welcome to your life <a href="https://www.codeschool.com/">< should you so choose ></a></h2>
+    </header>
+
+    <ul id="name-list">
+      <li>
+        <!-- main.js lines 63-73 -->
+        <h5>An Array of Name Strings Generated with JavaScript</h5>
+      </li>
+    </ul>
+
+    <ul id="user-list">
+      <li>
+        <!-- main.js lines 78-130 ( * don't worry, it's mostly comments describing whats going on.
+                                      This HTML would only be 30 lines if I removed the comments)-->
+        <h5>An Array of User Objects Generated with JavaScript</h5>
+      </li>
+    </ul>
+
+    <div class="just-a-taste">
+      <h4>Ready to Dive Deeper?</h4>
+      <p class="tab-1">// main.js line 3</p>
+      <p class="tab-1">Test: Right click and select inspector. Run the folowing code. What do you expect the console to say?</p>
+      <p class="tab-1">var add = function( a, b ) {</p>
+      <p class="tab-2">return a + b;</p>
+      <p class="tab-1">};</p>
+      <p class="tab-1">let four = add( 2, 2 );</p>
+      <p class="tab-1">console.log( four );</p>
+    </div>
+
   </div>
   <!-- Links JavaScript files to application
      * notice this is right before the closing body tag *-->
