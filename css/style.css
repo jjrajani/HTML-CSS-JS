@@ -2,3 +2,119 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+
+body {
+  background: #333;
+}
+
+header {
+  background: powderblue;
+  color: #333;
+  font-weight: 600;
+  padding: 1vw;
+}
+
+header > h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > h2 > a {
+  font-size: 0.6em;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none; /* Removes Underline on Links*/
+}
+
+header > h2 > a:hover {
+  color: red;
+}
+
+div.just-a-taste {
+  background: white;
+  margin: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2vh;
+}
+
+.just-a-taste > h4 {
+  text-align: center;
+  background: green;
+  color: white;
+  padding: 10px 0;
+  margin-top: 0;
+}
+
+.tab-1 {
+  margin: 1vh 15vw;
+}
+
+.tab-2 {
+  margin: 1vh 20vw;
+}
+
+ul {
+  list-style: none;
+  padding: none;
+  margin: 5vh auto;
+}
+
+/* Name List */
+
+#name-list {
+  background: white;
+  width: 80%;
+  padding: 5%;
+  border: solid yellow 3px;
+}
+
+/* :before adds content before the element. */
+#name-list > li:before {
+  content: "Name: ";
+  /*
+   NOTICE - "Name: " shows up before Frankenstein
+   but isn't coded in the HTML or JavaScript
+  */
+  font-weight: 600;
+  color: green;
+}
+/* because the first item in the list is actually the title,
+   we have to remove the "Name: " tag content on the first list item.
+*/
+#name-list > li:first-child:before {
+  content: ""
+}
+
+#name-list > li {
+  color: #888;
+  margin: 1vh 0;
+}
+
+#name-list > li:first-child {
+  color: black;
+  font-size: 1.2em;
+  margin: 0 0 ;
+}
+
+/* User List */
+
+#user-list {
+  border: solid yellow 3px;
+  background: white;
+  width: 80vw;
+  padding: 5%;
+}
+
+li.user-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+li.user-info > p {
+  width: 25%;
+  margin: 0.25vh 5%;
+}
